@@ -1,0 +1,3 @@
+%include <head.h>
+/bin/bash /home/basanta/training/scripts/training/basic/f1/datewisefolder.sh
+%include <tail.h>

@@ -1,0 +1,19 @@
+# Definition of the suite test.
+suite basic
+   edit ECF_INCLUDE "/home/basanta/training"  # replace '$HOME' with the path to your home directory
+   edit ECF_HOME "/home/basanta/training"
+   family f1
+	label info "Run this family every 1 minute"
+	edit sleep 20
+      	cron 00:00 23:00 00:01
+      task t1
+	label info "Create daywise Folder"
+      task t2
+	trigger t1 eq complete
+	label info "Get new data."
+      task t3	
+	trigger t2 eq complete
+	label info "Data synced to some other folder"
+   endfamily
+endsuite
+

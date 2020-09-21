@@ -1,0 +1,10 @@
+/training/basic/f1/*.job?
+/training/basic/f1/*.?
+/training/basic/f1/t3
+/training/data/training/basic/f1/*
+/training/databackup/*
+/training/hosts.*
+/training/log
+
+
+
